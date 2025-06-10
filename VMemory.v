@@ -1,4 +1,4 @@
-//Valid bits of cache lines
+// Valid bits of cache lines
 
 
 module VMemory(
