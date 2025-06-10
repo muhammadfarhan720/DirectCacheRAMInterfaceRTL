@@ -1,3 +1,5 @@
+// Testbench for design verification
+
 module TB();
 	reg globalclock = 0,reset = 0, start = 0,wrEn=0;
 	reg[14:0] address = 15'b0;
