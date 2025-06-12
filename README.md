@@ -37,3 +37,6 @@ This project involves the RTL design and verification of a direct-mapped cache m
   -  Thorough validation using Xilinx Vivado, confirming design reliability and performance.
 
 
+## Cache mapping architecture 
+
+![Direct_mapping](https://github.com/user-attachments/assets/8ff5f412-7d26-43c6-8869-eb8a96fbe02f)
