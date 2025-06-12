@@ -115,3 +115,6 @@ The cache interface was tested and verified in Xilinx Vivado Simulator using a S
   – Write a new value to a cache line, then read it back to validate dirty-bit logic.  
 - **Offset Coverage**  
   – Access same cache line with offsets 0, 1, 2, 3 to confirm 4:1 word mux.
+
+[![Cache Mapping Thumbnail](Image/Direct_mapping.jpg)](https://drive.google.com/file/d/194-agafBoxZ01dm_yz42LCh1Bm7x_wFZ/view?usp=sharing)
+
