@@ -39,4 +39,47 @@ This project involves the RTL design and verification of a direct-mapped cache m
 
 ## Cache mapping architecture 
 
+
+
 ![Direct_mapping](https://github.com/user-attachments/assets/8ff5f412-7d26-43c6-8869-eb8a96fbe02f)
+
+
+1. **Address Partitioning (15-bit input)**
+   - **Tag (MSBs)**  
+     - Width: 3 bits (bits 14–12)  
+     - Used to compare against stored tags for hit/miss decision  
+   - **Index**  
+     - Width: 10 bits (bits 11–2)  
+     - Selects one of 1 024 cache lines in both tag and data arrays  
+   - **Block Offset (LSBs)**  
+     - Width: 2 bits (bits 1–0)  
+     - Chooses which 32-bit word within the 128-bit cache line is returned 
+
+2. **Tag Array**
+   - Depth: 1 024 entries  
+   - Each entry holds:
+     - 3-bit tag  
+     - 1-bit valid flag  
+     - (Optional) 1-bit dirty flag for write-back support  
+   - On each access:
+     - Read tag & valid bit at indexed entry  
+     - Compare read tag to address tag → generate “tag_cmp”  
+     - Hit = (`tag_cmp` && `valid`)  
+
+3. **Data Array**
+   - Depth: 1 024 entries  
+   - Each entry width: 128 bits (4 × 32-bit words)  
+   - On a **hit**:
+     - Data word at (index, offset) is selected via a 4-to-1 word mux  
+   - On a **miss**:
+     - Full 128-bit line is fetched from RAM, written into this array
+
+4. **Hit/Miss Determination & Muxing**
+   - **Hit Logic**  
+     ```verilog
+     hit = (tag_array[index].tag == addr_tag) && tag_array[index].valid;
+     ```  
+   - **Data Mux**  
+     - 4:1 word‐level mux selects one 32-bit word from the 128 bits based on `addr_offset`  
+     - Provides CPU read data in one cycle on a hit
+
