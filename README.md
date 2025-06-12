@@ -56,7 +56,7 @@ This project involves the RTL design and verification of a direct-mapped cache m
      - Chooses which 32-bit word within the 128-bit cache line is returned 
 
 2. **Tag Array**
-   - Depth: 1 024 entries  
+   - Depth: 1024 entries  
    - Each entry holds:
      - 3-bit tag  
      - 1-bit valid flag  
