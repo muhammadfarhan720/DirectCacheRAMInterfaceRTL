@@ -1,2 +1,2 @@
 # DirectCacheRAMInterfaceRTL
-Focused RTL design of cache-RAM communication interface and controller for a direct-mapped cache system, with verification in Xilinx Vivado
+This project involves the RTL design and verification of a direct-mapped cache memory system integrated with RAM and a control unit, implemented using Xilinx Vivado. The system supports a 15-bit address input, managing a 128-bit cache line with 1024 entries.
