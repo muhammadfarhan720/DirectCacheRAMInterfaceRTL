@@ -50,7 +50,7 @@ This project involves the RTL design and verification of a direct-mapped cache m
      - Used to compare against stored tags for hit/miss decision  
    - **Index**  
      - Width: 10 bits (bits 11–2)  
-     - Selects one of 1 024 cache lines in both tag and data arrays  
+     - Selects one of 1024 cache lines in both tag and data arrays  
    - **Block Offset (LSBs)**  
      - Width: 2 bits (bits 1–0)  
      - Chooses which 32-bit word within the 128-bit cache line is returned 
