@@ -90,7 +90,7 @@ This project involves the RTL design and verification of a direct-mapped cache m
 The cache interface was tested and verified in Xilinx Vivado Simulator using a SystemVerilog testbench. RAM contents were pre-initialized so each address holds its own index value, and a global clock/reset was driven from the testbench. Coverage focused on:
 
 - **Address Mapping**  
-  Mapping all 32 768 RAM entries into 1 024 cache lines via 10-bit index and 3-bit tag.
+  Mapping all 32,768 RAM entries into 1 024 cache lines via 10-bit index and 3-bit tag.
 - **Hit/Miss Behavior**  
   Correct detection of cold misses, cache hits after refill, and write-back on dirty eviction.
 - **Handshake Protocol**  
