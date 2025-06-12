@@ -1,6 +1,7 @@
 # DirectCacheRAMInterfaceRTL
 This project involves the RTL design and verification of a direct-mapped cache memory system integrated with RAM and a control unit, implemented using Xilinx Vivado. The system supports a 15-bit address input, managing a 128-bit cache line with 1024 entries.
 
+# Architecture Top view
 
 ![Cache_controller_synthesis (1)](https://github.com/user-attachments/assets/1fd2247e-335b-4b65-ac5b-6853482763b3)
 
