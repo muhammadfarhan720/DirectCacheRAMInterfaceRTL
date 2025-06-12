@@ -5,7 +5,7 @@ This project involves the RTL design and verification of a direct-mapped cache m
 ![Cache_controller_synthesis (1)](https://github.com/user-attachments/assets/1fd2247e-335b-4b65-ac5b-6853482763b3)
 
 
-## Key Features
+## Important functionality
 
 - **Hit/Miss Logic**  
   - Tag-bits + valid-bit comparison in one cycle  
@@ -15,7 +15,8 @@ This project involves the RTL design and verification of a direct-mapped cache m
   - Two-phase `req`/`ack` ensures no data hazards  
   - Back-to-back transfers supported via pipelined signals
 
- 
+## Key Features
+
 - **Cache Architecture:**  
   - Direct-mapped cache with 1024 entries, each storing a 128-bit data line.
 
