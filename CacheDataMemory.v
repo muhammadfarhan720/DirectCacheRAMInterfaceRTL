@@ -11,7 +11,7 @@ module CacheDataMemory(
     reg[127:0] dataArray[1023:0];
     integer i;
 
-    always @(posedge globalclock, posedge reset) begin
+    always @(posedge globalclock) begin
       if (reset)
        begin
         for (i = 0; i < 1024; i = i + 1) begin

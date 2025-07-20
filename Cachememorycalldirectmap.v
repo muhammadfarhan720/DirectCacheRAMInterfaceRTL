@@ -4,15 +4,14 @@
 
 module Cachememorycalldirectmap(
 
- globalclock, reset, start, done, wrEn, address, outData_cache, memOut
+ globalclock, reset, start, done, address, memOut
  
 );
     input globalclock, reset, start;
     input[14:0] address;
-    input  wrEn;
     output done;
  
-    output[31:0] outData_cache;
+    wire[31:0] outData_cache;
     output [127:0] memOut;
     wire hit;
     

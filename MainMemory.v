@@ -11,9 +11,11 @@ module MainMemory(
 
     assign outData_mem = {dataArray[{address, 2'b00}], dataArray[{address, 2'b01}],
 	dataArray[{address, 2'b10}], dataArray[{address, 2'b11}]};
+   
     initial begin
 	for(i = 0; i < 32767; i = i + 1) begin
 	    dataArray[i] = i; //Saving value inside the memory blocks as same as it's index numbers
 	end
     end
+
 endmodule 

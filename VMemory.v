@@ -10,7 +10,7 @@ module VMemory(
 
     reg[1023:0] validArray;
     
-    always @(posedge globalclock, posedge reset) begin
+    always @(posedge globalclock) begin
       if (reset) 
       begin
         validArray <= 1024'b0;
