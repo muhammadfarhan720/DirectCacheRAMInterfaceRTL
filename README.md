@@ -6,6 +6,14 @@ This project involves the RTL design and verification of a direct-mapped cache m
 ![Cache_controller_synthesis (1)](https://github.com/user-attachments/assets/1fd2247e-335b-4b65-ac5b-6853482763b3)
 
 
+
+### Video : Overview and Verification testing 
+
+[![Thumbnail for video demo](https://raw.githubusercontent.com/muhammadfarhan720/DirectCacheRAMInterfaceRTL/main/Image/Timing_diagram_cache.jpg)](https://drive.google.com/file/d/194-agafBoxZ01dm_yz42LCh1Bm7x_wFZ/view?usp=sharing)
+
+*Click the thumbnail to see the overview demo of the Cache-Ram memory hierarchy architecture and it's verification*
+
+
 ## Important functionality
 
 - **Hit/Miss Logic**  
@@ -118,8 +126,3 @@ The cache interface was tested and verified in Xilinx Vivado Simulator using a S
   – Access same cache line with offsets 0, 1, 2, 3 to confirm 4:1 word mux.
 
 
-### Video : Overview and Verification testing 
-
-[![Thumbnail for video demo](https://raw.githubusercontent.com/muhammadfarhan720/DirectCacheRAMInterfaceRTL/main/Image/Timing_diagram_cache.jpg)](https://drive.google.com/file/d/194-agafBoxZ01dm_yz42LCh1Bm7x_wFZ/view?usp=sharing)
-
-*Click the thumbnail to see the overview demo of the Cache-Ram memory hierarchy architecture and it's verification*
