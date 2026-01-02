@@ -7,7 +7,7 @@ This project involves the RTL design and verification of a direct-mapped cache m
 
 
 
-### Video : Overview and Verification testing 
+# Video : Overview and Verification testing 
 
 [![Thumbnail for video demo](https://raw.githubusercontent.com/muhammadfarhan720/DirectCacheRAMInterfaceRTL/main/Image/Timing_diagram_cache.jpg)](https://drive.google.com/file/d/194-agafBoxZ01dm_yz42LCh1Bm7x_wFZ/view?usp=sharing)
 
